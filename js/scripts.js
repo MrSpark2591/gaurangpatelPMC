@@ -400,8 +400,8 @@ function initMonolit() {
       });
   });
   // Background video ------------------
-  var l = $(".background-youtube").data("vid");
-  var m = $(".background-youtube").data("mv");
+  var l = $(".background-youube").data("vid");
+  var m = $(".background-youube").data("mv");
   $(".background-youtube").YTPlayer({
     fitToBackground: true,
     videoId: l,
@@ -918,7 +918,7 @@ function initparallax() {
       s.destroy();
     }
   }
-  if (trueMobile) $(".background-youtube , .background-vimeo").remove();
+  if (trueMobile) $(".background-youube , .background-vimeo").remove();
 }
 document.addEventListener("gesturestart", function (e) {
   e.preventDefault();
