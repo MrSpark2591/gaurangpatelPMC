@@ -402,7 +402,7 @@ function initMonolit() {
   // Background video ------------------
   var l = $(".background-youube").data("vid");
   var m = $(".background-youube").data("mv");
-  $(".background-youtube").YTPlayer({
+  $(".background-youube").YTPlayer({
     fitToBackground: true,
     videoId: l,
     pauseOnScroll: true,
