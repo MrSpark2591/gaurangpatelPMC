@@ -10118,32 +10118,32 @@ if (typeof Object.create !== "function") {
         }
       });
     },
-    createContainerVideo: function b() {
-      var p = this;
-      var o = g(
-        '<div id="ytplayer-container' +
-          p.ID +
-          '" >                                    <div id="' +
-          p.holderID +
-          '" class="ytplayer-player"></div>                                     </div>                                     <div id="ytplayer-shield"></div>'
-      );
-      p.$node.append(o);
-      p.$YTPlayerString = o;
-      o = null;
-    },
-    createBackgroundVideo: function l() {
-      var p = this,
-        o = g(
-          '<div id="ytplayer-container' +
-            p.ID +
-            '" class="ytplayer-container background">                                    <div id="' +
-            p.holderID +
-            '" class="ytplayer-player"></div>                                    </div>                                    <div id="ytplayer-shield"></div>'
-        );
-      p.$node.append(o);
-      p.$YTPlayerString = o;
-      o = null;
-    },
+    // createContainerVideo: function b() {
+    //   var p = this;
+    //   var o = g(
+    //     '<div id="ytplayer-container' +
+    //       p.ID +
+    //       '" >                                    <div id="' +
+    //       p.holderID +
+    //       '" class="ytplayer-player"></div>                                     </div>                                     <div id="ytplayer-shield"></div>'
+    //   );
+    //   p.$node.append(o);
+    //   p.$YTPlayerString = o;
+    //   o = null;
+    // },
+    // createBackgroundVideo: function l() {
+    //   var p = this,
+    //     o = g(
+    //       '<div id="ytplayer-container' +
+    //         p.ID +
+    //         '" class="ytplayer-container background">                                    <div id="' +
+    //         p.holderID +
+    //         '" class="ytplayer-player"></div>                                    </div>                                    <div id="ytplayer-shield"></div>'
+    //     );
+    //   p.$node.append(o);
+    //   p.$YTPlayerString = o;
+    //   o = null;
+    // },
     resize: function c(s) {
       var r = g(i);
       if (!s.options.fitToBackground) {
