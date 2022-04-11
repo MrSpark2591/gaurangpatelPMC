@@ -9803,12 +9803,10 @@ jQuery.extend(jQuery.easing, {
       },
       n = {
         networkDefs: {
-          facebook: {
-            url: "http://www.facebook.com/share.php?u=gaurangpatelpmc.com",
-          },
-          twitter: { url: "https://twitter.com/share?via=gaurangpatelpmc.com&text=|140|" },
+          facebook: { url: "http://www.facebook.com/share.php?u=|u|" },
+          twitter: { url: "https://twitter.com/share?via=in1.com&text=|140|" },
           linkedin: {
-            url: "http://www.linkedin.com/shareArticle?mini=true&url=gaurangpatelpmc.com&title=|t|&summary=|d|&source=in1.com",
+            url: "http://www.linkedin.com/shareArticle?mini=true&url=|u|&title=|t|&summary=|d|&source=in1.com",
           },
           in1: { url: "http://www.in1.com/cast?u=|u|", w: "490", h: "529" },
           tumblr: { url: "http://www.tumblr.com/share?v=3&u=|u|" },
@@ -9824,9 +9822,7 @@ jQuery.extend(jQuery.easing, {
           stumbleupon: {
             url: "http://www.stumbleupon.com/submit?url=|u|&title=|t|",
           },
-          email: {
-            url: "mailto:gaurang.patel@gaurangpatelpmc.com?subject=|t|",
-          },
+          email: { url: "mailto:?subject=|t|" },
         },
       };
     return r[i]
@@ -10118,32 +10114,32 @@ if (typeof Object.create !== "function") {
         }
       });
     },
-    // createContainerVideo: function b() {
-    //   var p = this;
-    //   var o = g(
-    //     '<div id="ytplayer-container' +
-    //       p.ID +
-    //       '" >                                    <div id="' +
-    //       p.holderID +
-    //       '" class="ytplayer-player"></div>                                     </div>                                     <div id="ytplayer-shield"></div>'
-    //   );
-    //   p.$node.append(o);
-    //   p.$YTPlayerString = o;
-    //   o = null;
-    // },
-    // createBackgroundVideo: function l() {
-    //   var p = this,
-    //     o = g(
-    //       '<div id="ytplayer-container' +
-    //         p.ID +
-    //         '" class="ytplayer-container background">                                    <div id="' +
-    //         p.holderID +
-    //         '" class="ytplayer-player"></div>                                    </div>                                    <div id="ytplayer-shield"></div>'
-    //     );
-    //   p.$node.append(o);
-    //   p.$YTPlayerString = o;
-    //   o = null;
-    // },
+    createContainerVideo: function b() {
+      var p = this;
+      var o = g(
+        '<div id="ytplayer-container' +
+          p.ID +
+          '" >                                    <div id="' +
+          p.holderID +
+          '" class="ytplayer-player"></div>                                     </div>                                     <div id="ytplayer-shield"></div>'
+      );
+      p.$node.append(o);
+      p.$YTPlayerString = o;
+      o = null;
+    },
+    createBackgroundVideo: function l() {
+      var p = this,
+        o = g(
+          '<div id="ytplayer-container' +
+            p.ID +
+            '" class="ytplayer-container background">                                    <div id="' +
+            p.holderID +
+            '" class="ytplayer-player"></div>                                    </div>                                    <div id="ytplayer-shield"></div>'
+        );
+      p.$node.append(o);
+      p.$YTPlayerString = o;
+      o = null;
+    },
     resize: function c(s) {
       var r = g(i);
       if (!s.options.fitToBackground) {
