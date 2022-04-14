@@ -1575,7 +1575,7 @@ $("#map-canvas").gmap3({
   marker: {
     values: [
       {
-        latLng: [23.192726, 72.616775],
+        latLng: [23.191995, 72.616429],
         data: "Our office  - Gandhinagar City",
         options: {
           icon: "images/marker.svg",
