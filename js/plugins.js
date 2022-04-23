@@ -4266,7 +4266,7 @@ jQuery.extend(jQuery.easing, {
   b.prototype.init = function () {
     var m = this;
     var h =
-      '<span id="lg-zoom-in" class="lg-icon"></span><span id="lg-zoom-out" class="lg-icon"></span>';
+      '<span id="lg-zoom-in" class="lg-icon"></span><span id="lg-zoom-out" class="lg-icon"><i class="icon-zoom-out"></i></span>';
     this.core.$outer.find(".lg-toolbar").append(h);
     m.core.$el.on("onSlideItemLoad.lg.tm.zoom", function (q, p, o) {
       var n = m.core.s.enableZoomAfter + o;

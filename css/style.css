@@ -375,6 +375,24 @@ section {
   transition: all 400ms linear;
   border: 1px solid #000;
 }
+
+.footer-item .btn-white {
+  background-color: white;
+}
+
+.footer-item .btn-white span {
+  color: black;
+}
+
+
+.footer-item .btn-white:hover {
+  background-color: black;
+}
+
+.footer-item .btn-white:hover span{
+  color: white;
+}
+
 .btn:before {
   content: "";
   position: absolute;
@@ -528,6 +546,10 @@ section {
   float: left;
   width: 100%;
 }
+.parallax-box.left-side-change{
+  left: 0;
+}
+
 .parallax-box.slider-box {
   z-index: 3;
 }
@@ -858,7 +880,6 @@ nav li a:hover {
 }
 .hero-wrap-item h3 a {
   letter-spacing: 2px;
-  font-size: ;
 }
 .nFound-Page {
   display: inline-table;
@@ -1038,7 +1059,7 @@ article {
 }
 .serv-item {
   float: left;
-  width: 50%;
+  width: 33%;
   position: relative;
   padding: 10px 20px 10px 0;
   overflow: hidden;
@@ -1061,7 +1082,6 @@ article {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.21);
   z-index: 2;
 }
 .act-ser .serv-item-inner:before {
@@ -1078,7 +1098,6 @@ article {
   bottom: 50px;
 }
 .ser-title h3 {
-  color: #fff;
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
@@ -1090,10 +1109,9 @@ article {
   position: absolute;
   width: 100%;
   height: 2px;
-  background: #fff;
+  background: black;
   top: -6px;
   left: 0;
-  background: #fff;
 }
 .act-ser .ser-title h3:before {
   width: 0;
@@ -1855,7 +1873,7 @@ article {
   color: rgba(153, 153, 153, 0.61);
 }
 .vis-con-panel:before {
-  content: "/";
+  content: "";
   color: #000;
   position: absolute;
   font-size: 16px;
